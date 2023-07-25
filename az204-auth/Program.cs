@@ -12,3 +12,6 @@ var app = PublicClientApplicationBuilder
     .WithAuthority(AzureCloudInstance.AzurePublic, _tenantId)
     .WithRedirectUri("http://localhost")
     .Build();
+
+// Acquire a token
+string[] scopes = { "user.read" };
