@@ -15,3 +15,7 @@ var app = PublicClientApplicationBuilder
 
 // Acquire a token
 string[] scopes = { "user.read" };
+
+// Add code to request the token and write the result out to the console
+AuthenticationResult result = await app.AcquireTokenInteractive(scopes).ExecuteAsync();
+Console.WriteLine($"Token:\t{result.AccessToken}");
