@@ -236,4 +236,36 @@ Restore succeeded.
 # Add packages and using statements
 % dotnet add package Microsoft.Azure.Cosmos
 
+# Create the application in Program.cs
+
+# Build the application
+% dotnet build
+MSBuild version 17.6.8+c70978d4d for .NET
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+/Users/rob/repos/microsoft-az-204-renewal/az204-cosmosdb/Program.cs(12,24): warning CS8618: Non-nullable field 'cosmosClient' must contain a non-null value when exiting constructor. Consider declaring the field as nullable. [/Users/rob/repos/microsoft-az-204-renewal/az204-cosmosdb/az204-cosmosdb.csproj]
+/Users/rob/repos/microsoft-az-204-renewal/az204-cosmosdb/Program.cs(15,20): warning CS8618: Non-nullable field 'database' must contain a non-null value when exiting constructor. Consider declaring the field as nullable. [/Users/rob/repos/microsoft-az-204-renewal/az204-cosmosdb/az204-cosmosdb.csproj]
+/Users/rob/repos/microsoft-az-204-renewal/az204-cosmosdb/Program.cs(18,21): warning CS8618: Non-nullable field 'container' must contain a non-null value when exiting constructor. Consider declaring the field as nullable. [/Users/rob/repos/microsoft-az-204-renewal/az204-cosmosdb/az204-cosmosdb.csproj]
+  az204-cosmosdb -> /Users/rob/repos/microsoft-az-204-renewal/az204-cosmosdb/bin/Debug/net7.0/az204-cosmosdb.dll
+
+Build succeeded.
+
+/Users/rob/repos/microsoft-az-204-renewal/az204-cosmosdb/Program.cs(12,24): warning CS8618: Non-nullable field 'cosmosClient' must contain a non-null value when exiting constructor. Consider declaring the field as nullable. [/Users/rob/repos/microsoft-az-204-renewal/az204-cosmosdb/az204-cosmosdb.csproj]
+/Users/rob/repos/microsoft-az-204-renewal/az204-cosmosdb/Program.cs(15,20): warning CS8618: Non-nullable field 'database' must contain a non-null value when exiting constructor. Consider declaring the field as nullable. [/Users/rob/repos/microsoft-az-204-renewal/az204-cosmosdb/az204-cosmosdb.csproj]
+/Users/rob/repos/microsoft-az-204-renewal/az204-cosmosdb/Program.cs(18,21): warning CS8618: Non-nullable field 'container' must contain a non-null value when exiting constructor. Consider declaring the field as nullable. [/Users/rob/repos/microsoft-az-204-renewal/az204-cosmosdb/az204-cosmosdb.csproj]
+    3 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.04
+
+# Run the application
+% dotnet run
+Beginning operations...
+
+Created Database: az204Database
+
+Created Container: az204Container
+
+End of program, press any key to exit.
+
 ```
