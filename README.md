@@ -28,3 +28,28 @@ Token:	eyJ0eXAiOiJKV1QiLCJub25jZSI6IlNCNG83VU1HV2VXWUhmc3dTM3JRYkdIX2E5TTlrTmRSU
 ```
 
 ### Azure Cosmos DB: Create a database and container
+
+#### Prerequisites
+
+- Install the Azure CLI on your local development environment
+  - macOS - Use homebrew to install it per the guide [here](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-macos) - `brew update && brew install azure-cli`
+    - OPTIONAL: Configure completions in `zsh` on macOS - [https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh](https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh)
+      - Follow the steps at [https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-macos#completion-isnt-working](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-macos#completion-isnt-working) to configure autocompletion for the `az` and other command-line tools
+        - Step 1 - [https://docs.brew.sh/Shell-Completion](https://docs.brew.sh/Shell-Completion)
+        - Step 2 - For Zsh, add the following two lines to the bottom of your .zshrc file, then save and reload your Zsh profile.
+
+```sh
+# Example ~/.zshrc file with autocompletion defined after configuring completions in zsh
+...
+# 2023.08.11 Configure completions in zsh - https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
+
+autoload bashcompinit && bashcompinit
+source $(brew --prefix)/etc/bash_completion.d/az
+```
