@@ -210,3 +210,22 @@ Retrieve the primary key for the account:
   "secondaryReadonlyMasterKey": "5OjyIIBkIaJT7nLgvwPNMEWKXoNasPURLdtCubAf3rWpVeDN6RedeOL3YSbq0aPPqT1VlbZx9uvLACDbQdKssw=="
 }
 ```
+
+### Set up the console application
+
+```sh
+# Make sure we're in the appropriate directory
+% cd az204-cosmosdb
+
+# Create the .NET console app
+% dotnet new console
+The template "Console App" was created successfully.
+
+Processing post-creation actions...
+Restoring /Users/rob/repos/microsoft-az-204-renewal/az204-cosmosdb/az204-cosmosdb.csproj:
+  Determining projects to restore...
+  Restored /Users/rob/repos/microsoft-az-204-renewal/az204-cosmosdb/az204-cosmosdb.csproj (in 31 ms).
+Restore succeeded.
+
+# Open up Program.cs in VS Code 🤓
+```
