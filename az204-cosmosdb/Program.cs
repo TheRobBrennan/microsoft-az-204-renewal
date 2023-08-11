@@ -45,5 +45,20 @@ public class Program
       Console.ReadKey();
     }
   }
+
   //The sample code below gets added below this line
+  public async Task CosmosAsync()
+  {
+    // Create a new instance of the Cosmos Client
+    this.cosmosClient = new CosmosClient(EndpointUri, PrimaryKey);
+
+    // Create the database
+    await this.CreateDatabaseAsync();
+
+    // Create the container
+    await this.CreateContainerAsync();
+
+  }
+
+
 }
