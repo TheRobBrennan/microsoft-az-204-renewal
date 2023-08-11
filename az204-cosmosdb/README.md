@@ -229,3 +229,11 @@ Restore succeeded.
 
 # Open up Program.cs in VS Code 🤓
 ```
+
+### Build the console app
+
+```sh
+# Add packages and using statements
+% dotnet add package Microsoft.Azure.Cosmos
+
+```
