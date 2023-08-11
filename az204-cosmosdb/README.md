@@ -269,3 +269,11 @@ Created Container: az204Container
 End of program, press any key to exit.
 
 ```
+
+### Clean up Azure resources
+
+Time to delete the resource group. Example keys and IDs above now no longer work.
+
+```sh
+% az group delete --name az204-cosmos-rg --no-wait
+```
