@@ -60,5 +60,10 @@ public class Program
 
   }
 
-
+  private async Task CreateDatabaseAsync()
+  {
+    // Create a new database using the cosmosClient
+    this.database = await this.cosmosClient.CreateDatabaseIfNotExistsAsync(databaseId)
+    Console.WriteLine("Created Database: {0}\n", this.database.Id)
+  }
 }
