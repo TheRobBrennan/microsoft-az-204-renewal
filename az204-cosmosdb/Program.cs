@@ -66,4 +66,11 @@ public class Program
     this.database = await this.cosmosClient.CreateDatabaseIfNotExistsAsync(databaseId)
     Console.WriteLine("Created Database: {0}\n", this.database.Id)
   }
+
+  private async Task CreateContainerAsync()
+  {
+    // Create a new container
+    this.container = await this.database.CreateContainerIfNotExistsAsync(containerId, "/LastName");
+    Console.WriteLine("Created Container: {0}\n", this.container.Id);
+  }
 }
