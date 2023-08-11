@@ -29,6 +29,8 @@ Token:	eyJ0eXAiOiJKV1QiLCJub25jZSI6IlNCNG83VU1HV2VXWUhmc3dTM3JRYkdIX2E5TTlrTmRSU
 
 ### Azure Cosmos DB: Create a database and container
 
+See `az204-cosmosdb` after you are confident the prerequisites below have been satisfied for your development environment.
+
 #### Prerequisites
 
 - Install the Azure CLI on your local development environment
