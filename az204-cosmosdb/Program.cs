@@ -3,10 +3,10 @@
 public class Program
 {
   // Replace <documentEndpoint> with the information created earlier
-  private static readonly string EndpointUri = "<documentEndpoint>";
+  private static readonly string EndpointUri = "https://demo-rb-az204.documents.azure.com:443/";
 
   // Set variable to the Primary Key from earlier.
-  private static readonly string PrimaryKey = "<your primary key>";
+  private static readonly string PrimaryKey = "zyfS0tzyW9fkIkSp68SDxdWgPjkMINymx62UOk43KVd74ehJlh9fmF6NYVC5VvXgqLOb9klq6513ACDbwgvGeg==";
 
   // The Cosmos client instance
   private CosmosClient cosmosClient;
